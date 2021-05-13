@@ -39,7 +39,7 @@ public class Solution {
         
         public final TreeMap<Integer, LinkedList<Integer>> createTreeMap(int[] par) {
             TreeMap<Integer, LinkedList<Integer>>tm=new TreeMap<Integer, LinkedList<Integer>>();
-           // LinkedList<Integer> lElement;   
+           
             for (int i=0; i<par.length; i++){
                 LinkedList<Integer> v=tm.get(par[i]);
                 if(v==null)
@@ -94,7 +94,7 @@ public class Solution {
                         if (!hIter.hasNext()) break;
                         hCurrent=hIter.next();    
                     }
-                  //  System.out.println("set:"+set);
+                  
                     setResult(lCurrent);                    
                }
             }     
