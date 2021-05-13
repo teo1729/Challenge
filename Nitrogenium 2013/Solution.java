@@ -18,7 +18,7 @@ public class Solution {
         private final TreeMap<Integer, LinkedList<Integer>> heights;
         private final TreeMap<Integer, LinkedList<Integer>> levels;
         private int currentNIslands;
-       // private TreeSet<Integer> sl;
+      
         private final int[] result;
         private TreeSet<Integer> set;
         private final int nPoints;
