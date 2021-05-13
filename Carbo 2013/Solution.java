@@ -22,7 +22,7 @@ public class Solution {
     
      private void findCyclicityLimit(int i, int limitSup){
         int startCompare=i;
-        if (limitSup%i==0){//will divide by 2,3,4,5,6
+        if (limitSup%i==0){
             boolean correct=true;
             int rods=0;
             while (correct && startCompare<=(limitSup-i)){
@@ -62,7 +62,7 @@ public class Solution {
         }    
         proot=0;
         i=1;
-        while(proot==0 /*&& i<=13*/ && i<=Math.floor(sirLen/2) ){
+        while(proot==0 && i<=Math.floor(sirLen/2) ){
             int limitSup=sirLen;
             if (i<=EXTRA+1){//complete until 13
                 int rest=sirLen%i;
